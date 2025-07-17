@@ -33,8 +33,6 @@
     }
   },
   "scripts": {
-    "test": "jest",
-    "serve": "npx live-server --port=9090 --no-browser --ignore='.*,src,cypress,scripts'",
     "clean": "rimraf dist",
     "build": "npm run clean && tsc && rollup -c"
   },
