@@ -1,0 +1,55 @@
+{
+  "name": "@zero-org/stream-audio-player",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "jjzuo",
+  "description": "频流式播放库，支持 PCM/MP3/WAV/BASE64 格式的实时解码与播放。适用于 Web 音频应用开发",
+  "homepage": "",
+  "keywords": [
+    "audio",
+    "player",
+    "pcm",
+    "mp3",
+    "base64"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smartManual/stream-audio-player"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "unpkg": "./dist/index.min.js",
+  "module": "./dist/index.js",
+  "browser": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "jest",
+    "serve": "npx live-server --port=9090 --no-browser --ignore='.*,src,cypress,scripts'",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc && rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^24.0.14",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.41.1",
+    "rollup-plugin-dts": "^6.2.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
