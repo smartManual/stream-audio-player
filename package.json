@@ -1,6 +1,6 @@
 {
   "name": "@zero-org/stream-audio-player",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "jjzuo",
   "description": "频流式播放库，支持 PCM/MP3/WAV/BASE64 格式的实时解码与播放。适用于 Web 音频应用开发",
